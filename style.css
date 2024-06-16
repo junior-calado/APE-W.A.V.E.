@@ -1,0 +1,251 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+    overflow-x: hidden; /* Evita a barra de rolagem horizontal */
+}
+
+header {
+    background-color: #0077be;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+#map {
+    width: 100%;
+    height: 60vh;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #0077be;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.page {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.page h2 {
+    color: #0077be;
+}
+
+.page p {
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Add styles for pre to handle overflow */
+.page pre {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    white-space: pre-wrap; /* Allows the text to wrap */
+    word-wrap: break-word; /* Breaks long words */
+    overflow-x: auto; /* Adds horizontal scroll bar if needed */
+    max-width: 100%; /* Ensures it doesn't exceed the width of the page */
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    overflow: auto;
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 300px;
+    position: relative;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#loginForm,
+#registerForm {
+    margin-top: 10px;
+}
+
+#loginForm label,
+#registerForm label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#loginForm input[type="text"],
+#loginForm input[type="password"],
+#registerForm input[type="text"],
+#registerForm input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#loginForm button,
+#registerForm button {
+    display: block;
+    width: 100%;
+    background-color: #0077be;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#loginForm button:hover,
+#registerForm button:hover {
+    background-color: #005c99;
+}
+
+#registerPopup {
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 1rem auto;
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+form input, form textarea, form select {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+#btnShowDelete {
+    color: #fefefe;
+}
+
+@media (max-width: 750px) {
+    header {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .page {
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .popup-content {
+        width: 95%;
+        margin: 10% auto;
+    }
+
+    form {
+        width: 90%;
+        margin: 1rem auto;
+    }
+}

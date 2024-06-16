@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W.A.V.E. - Water and Aquatic Vigilance Enhancement</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <h1>W.A.V.E. - Water and Aquatic Vigilance Enhancement</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#educacao">Educação</a></li>
+                <li><a href="#denuncias">Denúncias</a></li>
+                <li><a href="#monitoramento">Monitoramento</a></li>
+                <li><a href="FACULDADE/FACULDADE.HTML" style="color: rgb(0, 0, 0); background-color: rgb(36, 56, 243); border-radius: 10%;"><b>FACULDADE</b></a></li>      
+                <li><a href="#" id="btnLogin">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+
+    <section id="sobre" class="page">
+        <h2>Sobre</h2>
+        <p>
+            A seção sobre oferece informações detalhadas sobre o projeto W.A.V.E. (Water and Aquatic Vigilance Enhancement). 
+            Saiba mais sobre nossa missão, objetivos, equipe e como você pode participar e contribuir para a preservação dos oceanos.
+        </p>
+        <h3>Missão</h3>
+        <p>Nossa missão é promover a conservação dos oceanos através de monitoramento, educação e ação comunitária.</p>
+        <h3>Objetivos</h3>
+        <ul>
+            <li>Monitorar a saúde dos ecossistemas marinhos</li>
+            <li>Educar o público sobre a importância dos oceanos</li>
+            <li>Facilitar denúncias de atividades prejudiciais ao meio ambiente</li>
+        </ul>
+        <h3>Equipe</h3>
+        <p>Nossa equipe é composta por especialistas em oceanografia, biologia marinha e ativistas ambientais dedicados à proteção dos oceanos.</p>
+    </section>  
+
+    <section id="educacao" class="page">
+        <h2>Educação</h2>
+        <p>
+            A seção de educação é um espaço dedicado ao aprendizado e conscientização sobre a importância da conservação dos oceanos. 
+            Aqui você encontrará recursos educativos, artigos, vídeos e iniciativas de conservação.
+        </p>
+        <h3>Artigos Recentes</h3>
+        <article>
+            <h4>A Importância dos Manguezais</h4>
+            <p>Os manguezais desempenham um papel crucial na proteção costeira e na biodiversidade marinha. Saiba mais sobre sua importância e como podemos protegê-los.</p>
+            <a href="https://www.unaerp.br/documentos/904-a-importancia-dos-manguezais-para-o-equilibrio-ambiental/file" target="_blank">Leia mais</a>
+        <HR>
+        </article>
+        <h3>Vídeos Educativos</h3>
+        <article>
+            <h4>A Vida nos Recifes de Coral</h4>
+            <p>Descubra a diversidade de vida que habita os recifes de coral e a importância de preservar esses ecossistemas.</p>
+            <a href="https://youtu.be/TaTgUaJRRfQ" target="_blank">Assista ao vídeo</a>
+        </article>
+    </section>
+
+    <section id="denuncias" class="page">
+        <h2>Denúncias</h2>
+        <p>
+            A seção de denúncias permite aos usuários relatar atividades ilegais e impactos ambientais prejudiciais aos oceanos. 
+            Se você identificar alguma atividade suspeita ou danosa, utilize esta seção para fazer sua denúncia.
+        </p>
+        <form id="denunciaForm" action="#" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="descricao">Descrição da Denúncia:</label>
+            <textarea id="descricao" name="descricao" rows="4" required></textarea>
+            <label for="foto">Foto (opcional):</label>
+            <input type="file" id="foto" name="foto" accept="image/*">
+            <button type="submit">Enviar Denúncia</button>
+        </form>
+        <hr>
+        <h3 style="color: #007bff;">DENUNCIAS RECENTES</h3>
+        <article>
+            <h4>Despejo Ilegal de Lixo</h4>
+            <p>Local: Praia de Copacabana, Rio de Janeiro</p>
+            <p>Descrição: Foi observado um despejo ilegal de lixo na Praia de Copacabana, afetando a vida marinha local.</p>
+            <img src="IMG/plasticos_0.webp" alt="Despejo ilegal de lixo" style="width: 30%; height: auto;">
+        </article>
+        <hr>
+        <article>
+            <h4>Pesca Ilegal de Corais</h4>
+            <p>Local: Recife de Coral, Fernando de Noronha</p>
+            <p>Descrição: Pescadores ilegais foram vistos coletando corais em uma área protegida.</p>
+            <img src="IMG/coral.jpg" alt="Pesca ilegal de corais" style="width: 30%; height: auto;">
+        </article>
+    </section>
+
+    <section id="monitoramento" class="page">
+        <h2>Monitoramento</h2>
+        <div id="map"></div>
+        <p>
+            A seção de monitoramento fornecerá informações atualizadas sobre a saúde dos oceanos e ecossistemas marinhos. 
+            Utilizaremos tecnologia avançada para coletar dados precisos e apresentá-los de forma acessível e informativa.
+        </p>
+        <h3>Notícias Recentes</h3>
+        <article>
+            <h4>Sonda Submarina Detecta Mudanças Climáticas</h4>
+            <p>Recentemente, uma sonda submarina detectou mudanças significativas na temperatura e salinidade do oceano Atlântico, indicando possíveis efeitos das mudanças climáticas.</p>
+            <a href="https://example.com/noticia1" target="_blank">Leia mais</a>
+        </article>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2024 W.A.V.E. - Todos os direitos reservados.</p>
+</footer>
+
+<!-- Popup de login -->
+<div id="loginPopup" class="popup">
+    <div class="popup-content">
+        <span class="close" id="closeLogin">&times;</span>
+        <h2>Login</h2>
+        <form action="#" method="POST" id="loginForm">
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Entrar</button>
+        </form>
+        <p>Não tem uma conta? <a href="#" id="btnShowRegister">Registre-se</a></p>
+        <p><a href="#" id="btnShowDelete">Excluir Usuário</a></p>
+    </div>
+</div>
+
+<!-- Popup de registro -->
+<div id="registerPopup" class="popup">
+    <div class="popup-content">
+        <span class="close" id="closeRegister">&times;</span>
+        <h2>Registro</h2>
+        <form action="#" method="POST" id="registerForm">
+            <label for="newUsername">Novo Usuário:</label>
+            <input type="text" id="newUsername" name="newUsername" required>
+            <label for="newPassword">Nova Senha:</label>
+            <input type="password" id="newPassword" name="newPassword" required>
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
+</div>
+
+<!-- Popup de exclusão -->
+<div id="deletePopup" class="popup">
+    <div class="popup-content">
+        <span class="close" id="closeDelete">&times;</span>
+        <h2>Excluir Usuário</h2>
+        <form action="#" method="POST" id="deleteForm">
+            <label for="deleteUsername">Usuário:</label>
+            <input type="text" id="deleteUsername" name="deleteUsername" required>
+            <button type="submit">Excluir</button>
+        </form>
+    </div>
+</div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
